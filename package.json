@@ -1,7 +1,6 @@
 {
   "name": "react-typescript-mobx-parcel-starter",
   "version": "1.0.0",
-  "main": "index.html",
   "author": "hello@timganter.io",
   "license": "MIT",
   "scripts": {
