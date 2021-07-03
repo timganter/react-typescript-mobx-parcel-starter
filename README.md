@@ -6,6 +6,7 @@ A basic hello world using [react](//reactjs.org/) + [typescript](//www.typescrip
 1. `git clone git@github.com:timganter/react-typescript-mobx-parcel-starter.git`
 1. `npm install`
 1. `npm start`
+1. You should see [this hello world and counter example](https://timganter.github.io/react-typescript-mobx-parcel-starter/)
 
 ## Github pages
 
