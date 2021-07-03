@@ -7,7 +7,7 @@ A basic hello world using [react](//reactjs.org/) + [typescript](//www.typescrip
 1. `npm install`
 1. `npm start`
 
-# Github pages
+## Github pages
 
 This repo is configured to publish to [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). Here's how to use it from the command line...
 
