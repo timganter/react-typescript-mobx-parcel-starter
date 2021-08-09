@@ -14,6 +14,11 @@
     "comma-dangle": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "indent": ["warn", 2]
+    "semi": ["warn", "never"],
+    "indent": ["warn", 2],
+    "@typescript-eslint/indent": ["warn", 2, {"SwitchCase": 1}],
+    "keyword-spacing": ["warn"],
+    "@typescript-eslint/keyword-spacing": ["warn"],
+    "space-before-blocks": ["warn", "always"]
   }
 }
