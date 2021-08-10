@@ -1,6 +1,11 @@
 // == External
-import { makeAutoObservable, observable, action } from "mobx"
+import { makeAutoObservable, observable, action, computed } from "mobx"
 import { createContext, useContext }              from "react"
+
+type Fox = {
+  image: string,
+  link : string
+}
 
 class RootStore {
 
@@ -9,6 +14,11 @@ class RootStore {
   }
 
   @observable count = 0
+  @observable fox:Fox
+
+  @computed hasFox():boolean {
+    return this.fox !== undefined
+  }
 
   @action countIncrement(): void {
     this.count++
@@ -18,6 +28,12 @@ class RootStore {
     this.count--
   }
 
+  @action async fetchAFox(): Promise<void> {
+    this.fox = undefined
+    const url = 'https://randomfox.ca/floof/'
+    const response =  await (await fetch(url)).json()
+    this.fox = response
+  }
 }
 
 const RootStoreContext = createContext(new RootStore())
