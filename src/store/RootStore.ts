@@ -29,10 +29,14 @@ class RootStore {
   }
 
   @action async fetchAFox(): Promise<void> {
-    this.fox = undefined
+    this.setFox(undefined)
     const url = 'https://randomfox.ca/floof/'
     const response =  await (await fetch(url)).json()
-    this.fox = response
+    this.setFox(response)
+  }
+
+  @action setFox (fox:undefined|Fox) {
+    this.fox = fox
   }
 }
 
